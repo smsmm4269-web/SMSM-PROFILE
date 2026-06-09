@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ismail's advantages and disadvantages</title>
+</head>
+<body>
+    <div class="page">
+<h1>Ismail's advantages and disadvantages</h1>
+<div class="advan">
+<p>
+<h2>
+    ADVANTAGES
+</h2>
+1. Loves to help
+<br><br>
+2. Doesn't like to refuse anyone's request
+<br><br>
+3. Doesn't like to pressure anyone
+<br><br>                                                                               
+4. Ambitious
+<br><br>
+5. Obedient
+<br><br>
+6. Good reputation
+<br><br>
+7. Honest
+<br><br>
+8. Maintains prayer
+</p>
+
+
+</div>
+
+
+<div class="disadvan">
+
+<p>
+    <h2>DIS ADVANTAGES</h2>
+
+    1.The problem is with everyone
+</p>
+
+</div>
+<div class="foods">
+    <p>
+        <h2>Favorite foods</h2>
+1. Umm Ali
+<br><br>
+2. Koshari
+<br><br>
+3. Grilled Meats
+<br><br>
+4. All Kinds of Fruit
+<br><br>
+5. Any Lemon or Pomegranate Soda
+    </p>
+</div>
+    </div>
+<div class="contact">
+    <h2>Send Message</h2>
+    <input type="text" id="message" placeholder="Write your message here">
+    <button onclick="sendWhatsApp()">Send your message to him</button>
+</div>
+</body>
+<style>
+body{
+    background-color: rgb(29, 28, 28);
+    font-family: 'Inter', sans-serif;
+    color: aliceblue;
+}
+.disadvan{
+    text-align: end;
+    background-color: rgb(58, 57, 57);
+    margin-left: 1000px;
+    padding-right: 40px;
+padding-top: 30px;
+padding-bottom: 30px;
+border-radius: 20px;
+}
+h1{
+    text-align: center;
+}
+.advan{
+background-color:rgb(58, 57, 57) ;
+margin-right: 1000px;
+padding-top: 30px;
+padding-bottom: 30px;
+  padding-left: 40px;
+  padding-right: 20px;
+  border-radius: 20px;
+  margin-top: 100px;
+}
+.foods{
+background-color:rgb(58, 57, 57) ;
+margin-right: 1000px;
+padding-top: 30px;
+padding-bottom: 30px;
+  padding-left: 40px;
+  padding-right: 20px;
+  border-radius: 20px;
+}
+.contact{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.contact input{
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+.contact button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+</style>
+<script>
+function sendWhatsApp(){
+    let msg = document.getElementById("message").value;
+
+    let phone = "201040848360"; // رقم الواتساب بصيغة دولية
+
+    let url = `https://wa.me/${phone}?text=${encodeURIComponent(msg)}`;
+
+    window.open(url, "_blank");
+}
+</script>
+
+
+</html>
