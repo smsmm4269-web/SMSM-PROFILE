@@ -1,51 +1,110 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
 body{
     text-align: center;
-    animation: bcg  11s infinite ;
+    animation: bcg 11s infinite;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
 }
-@keyframes bcg {
-  0% {background: #0F172A;}
-  25% {background: #1E3A8A;}
-  50% {background: #2563EB;}
-  75% {background: #1E40AF;}
-  100% {background: #0F172A;}
+
+@keyframes bcg{
+    0%{
+        background: #0F172A;
+    }
+    25%{
+        background: #1E3A8A;
+    }
+    50%{
+        background: #2563EB;
+    }
+    75%{
+        background: #1E40AF;
+    }
+    100%{
+        background: #0F172A;
+    }
 }
 
 .SIGN{
-    margin-top:120PX ;
+    width: 90%;
+    max-width: 450px;
+    margin: 120px auto 0;
+
     background: rgba(255,255,255,0.1);
-backdrop-filter: blur(10px);
-margin-right:500px ;
-margin-left: 500px;
-padding-top: 30px;
-border-radius: 20px;
-padding-bottom: 30px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    padding: 30px 20px;
+    border-radius: 20px;
 }
+
+img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid white;
+    object-fit: cover;
+}
+
+p{
+    color: azure;
+    font-size: 18px;
+    word-wrap: break-word;
+}
+
 input{
-padding: 10px 20px 10px 20px;
+    width: 80%;
+    max-width: 300px;
+    padding: 12px;
     border-radius: 30px;
     border: none;
+    outline: none;
 }
+
 input:focus{
-    transform: scale(1.3);
-    transition: 1s;
+    transform: scale(1.05);
+    transition: 0.5s;
 }
+
 button{
-    padding: 10px 80px 10px 80px;
+    width: 80%;
+    max-width: 300px;
+    padding: 12px;
     border-radius: 30px;
+    border: none;
     background-color: aqua;
-    transition: 1s;
+    cursor: pointer;
+    transition: 0.5s;
 }
+
 button:hover{
     background-color: aquamarine;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
-img{
-    border:3px solid white ;
-}
-P{
-    color: azure;
+
+@media (max-width: 768px){
+
+    .SIGN{
+        width: 95%;
+        margin-top: 60px;
+        padding: 20px;
+    }
+
+    img{
+        width: 120px;
+        height: 120px;
+    }
+
+    p{
+        font-size: 16px;
+    }
+
+    input,
+    button{
+        width: 90%;
+    }
 }
